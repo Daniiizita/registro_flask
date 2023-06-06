@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Projeto Flask</title>
+</head>
+<body>
+    <h1>Inserir Nomes</h1>
+    <form method="POST" action="/">
+        <input type="text" name="nome" placeholder="Digite um nome">
+        <input type="submit" value="Adicionar">
+    </form>
+    <ul>
+        {% for nome in nomes %}
+        <li>{{ nome }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

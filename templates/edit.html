@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Nome</title>
+</head>
+<body>
+    <h1>Editar Nome</h1>
+    <form method="POST" action="/edit/{{ index }}">
+        <input type="text" name="nome" value="{{ nome }}">
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>
